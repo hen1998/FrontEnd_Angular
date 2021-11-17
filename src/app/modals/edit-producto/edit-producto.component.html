@@ -1,0 +1,27 @@
+<div class="container p-3 my-3">
+  <h2>Editar producto</h2>
+  <form [formGroup]="updateProduct" (ngSubmit)="actualizarProducto()">
+    <div class="form-group">
+      <label for="PRO_NOMBRE">Nombre:</label>
+      <input type="text" class="form-control" formControlName="PRO_NOMBRE" placeholder="Nombre del producto">
+    </div>
+    <div class="form-group">
+      <label for="PRO_SERIE">Serie:</label>
+      <input type="text" class="form-control" formControlName="PRO_SERIE" placeholder="Serie del producto">
+    </div>
+    <div class="form-group">
+      <label for="PRO_COSTO">Costo:</label>
+      <input type="text" class="form-control" formControlName="PRO_COSTO" placeholder="Costo del producto">
+    </div>
+    <div class="form-group">
+      <label for="PRO_PVP">PVP:</label>
+      <input type="text" class="form-control" formControlName="PRO_PVP" placeholder="PVP del producto">
+    </div>
+    <div class="form-group">
+      <label for="PRO_IMAGEN">Imagen:</label>
+      <input type="text" class="form-control" formControlName="PRO_IMAGEN" placeholder="Imagen del producto">
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-primary">Actualizar</button>
+  </form>
+</div>
